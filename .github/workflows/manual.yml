@@ -23,12 +23,12 @@ jobs:
           git pull
           ls -al
           
-          - name: Print secrets
-              run: |
-                echo "${{ secrets.HOST }}"
-                echo "${{ secrets.KEY }}"
-              env:
-                HOST: ${{ secrets.HOST }}
-                DATABASE_PASSWORD: ${{ secrets.KEY }}
+  - name: Print secrets
+      run: |
+        echo "${{ secrets.HOST }}"
+        echo "${{ secrets.KEY }}"
+      env:
+        HOST: ${{ secrets.HOST }}
+        DATABASE_PASSWORD: ${{ secrets.KEY }}
 
         
