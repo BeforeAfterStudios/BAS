@@ -16,4 +16,5 @@ jobs:
         script: |
           whoami
           cd /home/skxgulra/domains/beforeafter.co.in/public_html/BAS
+          git pull
           ls -al
