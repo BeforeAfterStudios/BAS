@@ -22,4 +22,13 @@ jobs:
           cd /home/skxgulra/domains/beforeafter.co.in/public_html/BAS
           git pull
           ls -al
+          
+          - name: Print secrets
+              run: |
+                echo "${{ secrets.HOST }}"
+                echo "${{ secrets.KEY }}"
+              env:
+                HOST: ${{ secrets.HOST }}
+                DATABASE_PASSWORD: ${{ secrets.KEY }}
+
         
