@@ -3,10 +3,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: aqua;
   }
   
   h1 {
     font-size: 3rem;
     text-align: center;
+    
   }
   
