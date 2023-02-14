@@ -13,4 +13,7 @@ jobs:
         username: "skxgulra"
         password: "Y53sl0P.ky)CV9"
         port: "22999"
-        script: whoami
+        script: |
+          whoami
+          cd /home/skxgulra/domains/beforeafter.co.in/public_html/BAS
+          ls -al
