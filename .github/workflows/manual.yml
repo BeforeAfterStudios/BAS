@@ -15,7 +15,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           whoami
-          cd /home/skxgulra/BAS
-          git ${{ secrets.PATH }}
-          ls -al
+          cd ${{ secrets.PATH }
+          git pull
+          ls -altr
         
