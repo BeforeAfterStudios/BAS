@@ -15,7 +15,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           whoami
-          cd ${{ secrets.PATH }
+          cd ${{ secrets.PATH }}
           git pull
           ls -altr
         
