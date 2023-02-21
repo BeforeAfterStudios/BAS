@@ -9,3 +9,13 @@
   --global-color-warning: #e28413;
   --global-color-danger: #ff6542;
 }
+
+body {
+  font-family: var(--global-font-family);
+  font-size: var(--global-font-size);
+  color: var(--global-text-color);
+}
+
+h1 {
+  font-size: var(--global-primary-title-size);
+}
