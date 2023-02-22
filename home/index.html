@@ -21,23 +21,11 @@
   </div>
 
 <p> (1rem=16px is assued as the default browser preset)</p>
-<script>
-  window.addEventListener("beforeunload", function(event) {
-  // call your function here
-  refreshCacheAndReload();
-  });
-
-  (function refreshCacheAndReload() {
-    const request = new Request(window.location.href, {
-      cache: "reload"
-    });
-    fetch(request)
-      .then(response => {
-        window.location.reload();
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  })();
+<script type="text/javascript" language="javascript">
+  var versionUpdate = (new Date()).getTime();
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "/js/file_js.js?v=" + versionUpdate;
+  document.body.appendChild(script);
 </script>
 </html>
