@@ -17,16 +17,19 @@ body {
 }
 
 h1 {
+  font-family: var(--global-font-family);
   font-size: var(--global-primary-title-size);
   background-color: var(--global-color-primary);
 }
 
 h2 {
+  font-family: var(--global-font-family);
   font-size: var(--global-primary-title-size);
   background-color: var(--global-color-secondary);
 }
 
 p {
+  font-family: var(--global-font-family);
   font-size: var(--global-primary-title-size);
   background-color: var(--global-color-warning);
 }
