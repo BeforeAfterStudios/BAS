@@ -22,8 +22,9 @@
 
 <p> (1rem=16px is assued as the default browser preset)</p>
 <script>
-  window.addEventListener("beforeunload", () => {
-    refreshCacheAndReload();
+  window.addEventListener("beforeunload", function(event) {
+  // call your function here
+  refreshCacheAndReload();
   });
 
   function refreshCacheAndReload() {
