@@ -13,16 +13,16 @@ html {
   }
 
 h1{
-  font-size: 4rem;
+  font-size: 4em;
   background-color: var(--global-color-secondary);
 }
 p{
-  font-size: 1rem;;
+  font-size: 1em;;
   background-color: var(--global-color-primary);
 }
 
 .container {
-  font-size: 2rem;
+  font-size: 2em;
   background-color: var(--global-color-warning);
 }
 
