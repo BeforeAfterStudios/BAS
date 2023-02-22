@@ -9,7 +9,7 @@
   --global-color-danger: #ff6542;
 }
 h1{
-  font-size: 5rem;
+  font-size: 8rem;
   background-color: var(--global-color-secondary);
 }
 p{
