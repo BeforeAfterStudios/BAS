@@ -18,15 +18,15 @@ body {
 
 h1 {
   font-size: var(--global-primary-title-size);
-  color: var(--global-color-primary);
+  background-color: var(--global-color-primary);
 }
 
 h2 {
   font-size: var(--global-primary-title-size);
-  color: var(--global-color-secondary);
+  background-color: var(--global-color-secondary);
 }
 
 p {
   font-size: var(--global-primary-title-size);
-  color: var(--global-color-warning);
+  background-color: var(--global-color-warning);
 }
