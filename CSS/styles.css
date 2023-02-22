@@ -10,6 +10,7 @@
 }
 h1{
   font-size: 5rem;
+  background-color: var(--global-color-secondary);
 }
 p{
   font-size: var(--global-font-size);
