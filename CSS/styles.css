@@ -21,11 +21,12 @@ h1{
 }
 p{
   font-size: 1em;
+  background-color: var(--global-color-primary);
 }
 
 .container {
   font-size: 2em;
-  background-color:orange;
+  background-color: var(--global-color-warning);
 }
 
 .container p {
