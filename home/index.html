@@ -22,6 +22,9 @@
 
 <p> (1rem=16px is assued as the default browser preset)</p>
 <script>
-  location.reload(true); // reload the page and bypass the cache
+  const url = window.location.href;
+  const cacheBypassedUrl = url + (url.includes('?') ? '&' : '?') + 'timestamp=' + new Date().getTime();
+  window.location.replace(cacheBypassedUrl);
+  // navigate to a new URL with a timestamp query parameter to bypass the cache
 </script>
 </html>
