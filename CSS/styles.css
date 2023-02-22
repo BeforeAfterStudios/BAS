@@ -13,20 +13,20 @@ html {
   }
 
 h1{
-  font-size: 6em;
+  font-size: 6rem;
   background-color: var(--global-color-secondary);
 }
 p{
-  font-size: 1em;;
+  font-size: 1rem;;
   background-color: var(--global-color-primary);
 }
 
 .container {
-  font-size: 2em;
+  font-size: 2rem;
   background-color: var(--global-color-warning);
 }
 
 .container p {
-  padding: 2em;
+  padding: 2rem;
   background-color: var(--global-color-warning);
 }
