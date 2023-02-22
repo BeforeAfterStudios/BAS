@@ -31,6 +31,7 @@ p{
 
 .container p {
   padding: 2em;
+  background-color: var(--global-color-warning);
 }
 
 /*h1 {font-size: 48px;}
