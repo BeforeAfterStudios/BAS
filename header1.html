@@ -1,9 +1,21 @@
 <link rel="stylesheet" href="../CSS/styles.css?t=5566">
 <div class="header">
-    <a class="logo"><img src="../img/BA White Logo.png" height=50px"></a>
-    <div class="header-right">
-        <a class="active" href="#home">Home</a>
-        <a href="../home/">Contact</a>
-        <a href="../about/">About</a>
+    <a class="logo"><img src="../img/BA White Logo.png" height="50px"></a>
+    <div id="myDIV" class="header-right">
+      <a class="btn" href="../Home/">Home</a>
+      <a class="btn" href="../home/">Contact</a>
+      <a class="btn active" href="../about/">About</a>
     </div>
-</div>
+  </div>
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
