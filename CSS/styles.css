@@ -13,7 +13,7 @@ html {
   }
 
 h1{
-  font-size: 8em;
+  font-size: 6em;
   background-color: var(--global-color-secondary);
 }
 p{
