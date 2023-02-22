@@ -22,22 +22,21 @@
 
 <p> (1rem=16px is assued as the default browser preset)</p>
 <script>
-// Check if a new cache is available on page load.
-window.addEventListener('load', function(e) {
+  window.addEventListener("beforeunload", () => {
+    refreshCacheAndReload();
+  });
 
-window.applicationCache.addEventListener('updateready', function(e) {
-  if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-    // Browser downloaded a new app cache.
-    // Swap it in and reload the page to get the new hotness.
-    window.applicationCache.swapCache();
-    if (confirm('A new version of this site is available. Load it?')) {
-      window.location.reload();
-    }
-  } else {
-    // Manifest didn't changed. Nothing new to server.
+  function refreshCacheAndReload() {
+    const request = new Request(window.location.href, {
+      cache: "reload"
+    });
+    fetch(request)
+      .then(response => {
+        window.location.reload();
+      })
+      .catch(error => {
+        console.error(error);
+      });
   }
-}, false);
-
-}, false);
 </script>
 </html>
