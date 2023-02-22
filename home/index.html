@@ -27,7 +27,7 @@
   refreshCacheAndReload();
   });
 
-  function refreshCacheAndReload() {
+  (function refreshCacheAndReload() {
     const request = new Request(window.location.href, {
       cache: "reload"
     });
@@ -38,6 +38,6 @@
       .catch(error => {
         console.error(error);
       });
-  }();
+  })();
 </script>
 </html>
