@@ -38,7 +38,7 @@ html {
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    .container {background: pink; font-size: 50px;}
+    .container {background: rgb(59, 20, 0); font-size: 50px; color: white;}
   }
 
 h1{
