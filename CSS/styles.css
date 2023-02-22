@@ -9,7 +9,7 @@
   --global-color-danger: #ff6542;
 }
 h1{
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 p{
   font-size: var(--global-font-size);
@@ -25,11 +25,3 @@ p{
   padding: 2em;
   background-color: var(--global-color-warning);
 }
-
-/*h1 {font-size: 48px;}
-h2 {font-size: 24px;}
-p {font-size: 16px;}
-h1 {font-size: 3rem;}
-h2 {font-size: 1.5rem;}
-p {font-size: 1rem;}*/
-
