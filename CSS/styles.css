@@ -1,26 +1,18 @@
 /* Global Styles */
 :root {
   --global-font-family: Verdana, sans-serif;
-  --global-font-size: 0.8rem;
+  --global-font-size: 1rem;
   --global-text-color: #222;
-  --global-primary-title-size: 2rem;
   --global-color-primary: #88498f;
   --global-color-secondary: #779fa1;
   --global-color-warning: #e28413;
   --global-color-danger: #ff6542;
 }
-
-body {
-  font-family: var(--global-font-family);
-  font-size: var(--global-font-size);
-  color: var(--global-text-color);
-}
-
 h1{
   font-size: 2.5rem;
 }
 p{
-  font-size: 1em;
+  font-size: var(--global-font-size);
   background-color: var(--global-color-primary);
 }
 
