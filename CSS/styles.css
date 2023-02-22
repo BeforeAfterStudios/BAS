@@ -9,20 +9,20 @@
   --global-color-danger: #ff6542;
 }
 html {
-  font-size: 10px; 
+  font-size: 12px; 
   }
-  
+
 h1{
-  font-size: 8rem;
+  font-size: 4rem;
   background-color: var(--global-color-secondary);
 }
 p{
-  font-size: var(--global-font-size);
+  font-size: 1rem;;
   background-color: var(--global-color-primary);
 }
 
 .container {
-  font-size: 2em;
+  font-size: 2rem;
   background-color: var(--global-color-warning);
 }
 
