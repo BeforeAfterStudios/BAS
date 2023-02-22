@@ -8,6 +8,10 @@
   --global-color-warning: #e28413;
   --global-color-danger: #ff6542;
 }
+html {
+  font-size: 10px; 
+  }
+  
 h1{
   font-size: 8rem;
   background-color: var(--global-color-secondary);
