@@ -1,27 +1,32 @@
 /* Global Styles */
 :root {
   --global-font-family: Verdana, sans-serif;
-  --global-font-size: 14px ;
+  --global-font-size: 1rem;
   --global-text-color: #222;
-  --global-primary-title-size: 32px;
   --global-color-primary: #88498f;
   --global-color-secondary: #779fa1;
   --global-color-warning: #e28413;
   --global-color-danger: #ff6542;
 }
+html {
+  font-size: 14px; 
+  }
 
-body {
-  font-family: var(--global-font-family);
-  font-size: var(--global-font-size);
-  color: var(--global-text-color);
+h1{
+  font-size: 4em;
+  background-color: var(--global-color-secondary);
+}
+p{
+  font-size: 1em;;
+  background-color: var(--global-color-primary);
 }
 
-p {
-  font-family: var(--global-font-family);
-  font-size: var(--global-font-size);
-  color: var(--global-text-color);
+.container {
+  font-size: 2em;
+  background-color: var(--global-color-warning);
 }
 
-h1 {
-  font-size: var(--global-primary-title-size);
+.container p {
+  padding: 2em;
+  background-color: var(--global-color-warning);
 }
