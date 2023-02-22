@@ -1,32 +1,52 @@
 /* Global Styles */
 :root {
   --global-font-family: Verdana, sans-serif;
-  --global-font-size: 1rem;
+  --global-font-size: 14px ;
   --global-text-color: #222;
+  --global-primary-title-size: 32px;
   --global-color-primary: #88498f;
   --global-color-secondary: #779fa1;
   --global-color-warning: #e28413;
   --global-color-danger: #ff6542;
 }
-html {
-  font-size: 14px; 
-  }
 
-h1{
-  font-size: 4em;
-  background-color: var(--global-color-secondary);
-}
-p{
-  font-size: 1em;;
-  background-color: var(--global-color-primary);
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .p {background: red;}
 }
 
-.container {
-  font-size: 2em;
-  background-color: var(--global-color-warning);
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .p {background: green;}
 }
 
-.container p {
-  padding: 2em;
-  background-color: var(--global-color-warning);
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .p {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .p {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .p {background: pink;}
+}
+
+body {
+  font-family: var(--global-font-family);
+  font-size: var(--global-font-size);
+  color: var(--global-text-color);
+}
+
+p {
+  font-family: var(--global-font-family);
+  font-size: var(--global-font-size);
+  color: var(--global-text-color);
+}
+
+h1 {
+  font-size: var(--global-primary-title-size);
 }
